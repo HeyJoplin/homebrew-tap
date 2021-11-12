@@ -1,4 +1,4 @@
-cask "font-SAP-Business-Suite" do
+cask "font-sap-business-suite" do
     version "1.073"
     sha256 :no_check
   

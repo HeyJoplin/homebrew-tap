@@ -1,4 +1,4 @@
-cask "font-SAP-72-Mono" do
+cask "font-sap-72-mono" do
     version "1.10"
     sha256 :no_check
   

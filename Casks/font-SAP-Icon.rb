@@ -1,4 +1,4 @@
-cask "font-SAP-Icon" do
+cask "font-sap-icon" do
     version "4.10"
     sha256 :no_check
   
