@@ -7,11 +7,11 @@ cask "vlcdev" do
   arch arm: "arm64", intel: "x86_64"
   livecheck_arch = on_arch_conditional arm: "arm64", intel: "intel64"
   on_arm do
-    version "4.0.0,20260308-0411,f12988ae"
+    version "4.0.0,20260309-0415,8935caa9"
     sha256 :no_check
   end
   on_intel do
-    version "4.0.0,20260308-0411,f12988ae"
+    version "4.0.0,20260309-0415,8935caa9"
     sha256 :no_check
   end
 
