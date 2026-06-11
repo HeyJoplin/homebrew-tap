@@ -1,9 +1,9 @@
 class Gparallel < Formula
   desc "GNU Parallel installed as gparallel (g-prefixed to coexist with moreutils)"
   homepage "https://savannah.gnu.org/projects/parallel/"
-  url "https://ftpmirror.gnu.org/gnu/parallel/parallel-20260322.tar.bz2"
-  mirror "https://ftp.gnu.org/gnu/parallel/parallel-20260322.tar.bz2"
-  sha256 "764680e932f4d0d21cf0329bd9f9eed659895de16836001f6491533b822befe0"
+  url "https://ftpmirror.gnu.org/gnu/parallel/parallel-20260522.tar.bz2"
+  mirror "https://ftp.gnu.org/gnu/parallel/parallel-20260522.tar.bz2"
+  sha256 "2bab0cf913eeb60a24c6575d60e3c167cd03e63b4f7d17965915844e005dd895"
   license "GPL-3.0-or-later"
   version_scheme 1
   head "https://git.savannah.gnu.org/git/parallel.git", branch: "master"
