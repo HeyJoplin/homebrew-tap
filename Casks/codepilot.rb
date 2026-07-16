@@ -1,25 +1,29 @@
 cask "codepilot" do
-    version "0.56.0"
+  version "0.58.0"
 
-    # Architecture-specific URLs
-    on_intel do
-        url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-x64.dmg"
-        sha256 "294ab5d6551a9c042459ef07ce00788719740474f366b3c683bc98adf97c840f"
-    end
-    on_arm do
-        url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-arm64.dmg"
-        sha256 "623573cb5961288acf3793a5067725b0f37f5faf00ab4041170486e59178045f"
-    end
+  on_arm do
+    sha256 "9a4e63ed7a48051c30a8a9f8a822fc1059eec444f2e1069e8bfb51b64bd3ca73"
 
-    name "CodePilot"
-    desc "A desktop GUI for Claude Code — chat, code, and manage projects visually"
-    homepage "https://github.com/op7418/CodePilot/"
-
-    # Livecheck ensures we find the latest version from GitHub releases
-    livecheck do
-        url :url
-        strategy :github_latest
-    end
-
-    app "CodePilot.app"
+    url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-arm64.dmg"
   end
+  # Architecture-specific URLs
+  on_intel do
+    sha256 "44b4e9c4d77ea7834839b1acfd7bf4dd658a43c095faacaa6f0a42cc6a6665ec"
+
+    url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-x64.dmg"
+  end
+
+  name "CodePilot"
+  desc "Desktop GUI for Claude Code — chat, code, and manage projects visually"
+  homepage "https://github.com/op7418/CodePilot/"
+
+  # Livecheck ensures we find the latest version from GitHub releases
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
+  depends_on :macos
+
+  app "CodePilot.app"
+end
