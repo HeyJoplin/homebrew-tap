@@ -11,9 +11,10 @@ cask "codepilot" do
       url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-x64.dmg"
     end
 
+    depends_on macos: :monterey
+
     app "CodePilot.app"
   end
-
   on_linux do
     on_arm do
       sha256 "e4f6ad3e8a85d6af303a59d984438c17e7f209e8a05a349d7395718a9fea9d5b"
@@ -26,7 +27,7 @@ cask "codepilot" do
       appimage "CodePilot-#{version}-x86_64.AppImage", target: "codepilot"
     end
 
-    binary "CodePilot" 
+    binary "CodePilot"
   end
 
   name "CodePilot"
