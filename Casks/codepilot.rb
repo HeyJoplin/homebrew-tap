@@ -1,13 +1,13 @@
 cask "codepilot" do
-  version "0.64.0"
+  version "0.67.11"
 
   on_macos do
     on_arm do
-      sha256 "6cc3c00da7bb9ef639c3d48a80a04fc4ef986ccfb72456fcfedaa1ed40c99662"
+      sha256 "a5c390e6cd369e775ed043b9c727a30f439096501341e0cbadb46d99afff6185"
       url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-arm64.dmg"
     end
     on_intel do
-      sha256 "85a58fd4f24dabe7f0962523dac2d5124995d3871dca8f8b799bdffa4ac7568c"
+      sha256 "c95f8c3f3c71d380be6f96f8c6bdc9bd704276dcdd65c8ba7bc02c86bca9f72f"
       url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-x64.dmg"
     end
 
@@ -17,12 +17,12 @@ cask "codepilot" do
   end
   on_linux do
     on_arm do
-      sha256 "e4f6ad3e8a85d6af303a59d984438c17e7f209e8a05a349d7395718a9fea9d5b"
+      sha256 "ca54aa0ea4df0c2478d945d08ad613dd9a7cae3286945a4735f5121738ce62c1"
       url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-arm64.AppImage"
       appimage "CodePilot-#{version}-arm64.AppImage", target: "codepilot"
     end
     on_intel do
-      sha256 "cc4e2eb2cdf22cd6b5fae5e0f17da2a077def62d16f2808cafe87619a5436ad2"
+      sha256 "688278cc20e0c8dc7fb1b865a0434ce3fc12406d39995569a8f0a8f648b0c779"
       url "https://github.com/op7418/CodePilot/releases/download/v#{version}/CodePilot-#{version}-x86_64.AppImage"
       appimage "CodePilot-#{version}-x86_64.AppImage", target: "codepilot"
     end
